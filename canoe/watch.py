@@ -53,7 +53,6 @@ class WatchedFile(object):
 
             if tell > lastTell:
                 self._chunk(a, cb)
-                print a,
 
             lastTell = tell
 
@@ -68,9 +67,10 @@ class WatchedFile(object):
                 time.sleep(.1)
 
 
-def start_watch(conf):
-    pass
-
+def start_watch(canoe):
+    while True:
+        wf = WatchedFile(sys.argv[1])
+        wf.watch(canoe.__call__)
 
 if __name__ == '__main__':
     def cb(line, buf):

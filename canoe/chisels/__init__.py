@@ -1,1 +1,1 @@
-from canoe.chisels.simple import *
+from simple import *
