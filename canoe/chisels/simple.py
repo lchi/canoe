@@ -2,7 +2,7 @@ import re
 
 
 class WordsFilter(object):
-    
+
     def __init__(self, words, invert=False):
         if not hasattr(words, '__iter__'):
             esc = map(re.escape, words)
@@ -20,8 +20,8 @@ class WordsFilter(object):
 
 
 class RegexpFilter(object):
-    
+
     def __init__(self, re, invert=False):
         self._invert = invert
         self._re = re.compile(re)
-        
+

@@ -1,7 +1,5 @@
-
-
 class Buffer(object):
-    
+
     class EmptyValue:
         pass
 
@@ -16,7 +14,7 @@ class Buffer(object):
 
     def empty(self):
         return self.end == self.start
-        
+
     def push(self, val):
         self.els[self.end] = val
         self.end = (self.end + 1) % self.n
@@ -52,5 +50,5 @@ class Buffer(object):
             s = (self.start + 1) % self.n
             i += 1
         return out
-                  
-      
+
+

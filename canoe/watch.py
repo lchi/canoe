@@ -4,10 +4,9 @@ import os
 import sys
 import time
 
-from canoe.data import Buffer                  
-      
+from data import Buffer
+
 class WatchedFile(object):
-    
     def __init__(self, fname, bufn=0):
         self.filename = fname
         self.fd = open(fname, 'r')
