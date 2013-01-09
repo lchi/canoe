@@ -69,7 +69,7 @@ class WatchedFile(object):
 
 
 def start_watch(conf):
-    
+    pass
 
 
 if __name__ == '__main__':
